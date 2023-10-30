@@ -1,0 +1,9 @@
+name: CS2304 Demo
+on: [ push ]
+jobs:
+  run-simple-command:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+      - run: node --version
